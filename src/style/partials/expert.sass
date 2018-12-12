@@ -1,4 +1,6 @@
 .expert
+	&__title
+		margin-bottom: 10px
 	&__content
 		display: flex
 		align-items: flex-start
@@ -8,6 +10,25 @@
 		font-size: 18px
 		line-height: 1.56
 		color: #444444
+		margin-top: 50px
+		max-height: 430px
+		overflow: hidden
+		text-overflow: ellipsis
+		content: ''
+		position: relative
+		&::before 
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			position:absolute
+			left: 0
+			top: 0
+			background: linear-gradient(transparent 300px, white)
+
 		.text
 			+nlt
 				margin-bottom: 25px
+		.bold
+			color: #000000
