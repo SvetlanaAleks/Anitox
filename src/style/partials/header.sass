@@ -19,11 +19,13 @@
 			color: rgba(102, 102, 102, 0.9)
 			font-size: 15px
 			line-height: 1.2
+			flex-shrink: 0
 	.nav
 		display: flex
 		align-items: center
 		margin-right: 60px
 		&__item
+			flex-shrink: 0
 			+nlt
 				margin-right: 45px
 		.link
@@ -31,6 +33,7 @@
 			color: #161616
 			text-decoration-color: #a09f9f
 			position: relative
+			display: inline-block
 			.fico
 				position: absolute
 				left: 0
@@ -43,6 +46,7 @@
 					font-size: 24px
 	.pop
 		border: none
+		overflow: visible
 		width: 278px
 		line-height: 40px
 		border-radius: 20px
@@ -83,6 +87,7 @@
 				position: absolute
 				left: -493px
 				bottom: -159px
+				z-index: 1
 			.logo
 				font-size: 38px
 				font-weight: 900
@@ -258,25 +263,18 @@
 				position: relative
 				z-index: 5
 				display: flex
-				align-items: center
+				align-items: baseline
 				justify-content: center
-				&::before
-					content: ''
-					display: block
-					position: absolute
-					width: 100px
-					height: 38px
-					top: 0
-					border-radius: 5px
-					background-color: #fbc679
-					z-index: -1
+				background-color: #fbc679
+				min-width: 100px
+				padding: 3px 0
+				border-radius: 5px
 			&__value
 				font-size: 34px
 				color: #000000
 				font-weight: 900
 			&__current
 				color: #000000
-				align-self: flex-end
 	.leftovers
 		text-align: center
 		font-size: 18px
