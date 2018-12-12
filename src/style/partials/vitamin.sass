@@ -1,0 +1,61 @@
+.vitamin
+	background: url('../img/advantages_back.jpg') no-repeat center top
+	padding-bottom: 40px
+	&__title
+		line-height: 1
+		margin-bottom: 46px
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		.item
+			max-width: 370px
+			width: 100%
+			min-height: 235px
+			&:nth-of-type(-n+3)
+				border-bottom: 1px solid #bcdce4
+			.img-wrap
+				display: flex
+				align-items: center
+			&__img
+				//background: url('../img/A.jpg') no-repeat center
+				text-align: center
+				font-size: 110px
+				font-weight: 900
+				position: relative
+				margin-right: 35px
+				color: transparent
+				&-1
+					background: url('../img/A.jpg') no-repeat center
+					-webkit-background-clip: text
+				&-2
+					background: url('../img/B.jpg') no-repeat center
+					-webkit-background-clip: text
+				&-3
+					background: url('../img/C.jpg') no-repeat center
+					-webkit-background-clip: text
+				&-4
+					background: url('../img/D.jpg') no-repeat center
+					-webkit-background-clip: text
+				&-5
+					background: url('../img/E.jpg') no-repeat center
+					-webkit-background-clip: text
+				&-6
+					background: url('../img/M.jpg') no-repeat center
+					-webkit-background-clip: text
+				&::after
+					content: ''
+					display: block
+					position: absolute
+					height: 1px
+					width: 20px
+					background-color: #c2c2c2
+					right: -20px
+					top: 50%
+			&__name
+				font-size: 14px
+				color: #444444
+			&__text
+				font-size: 18px
+				line-height: 1.44
+				color: #444444
