@@ -1,0 +1,219 @@
+.sec-2__association-title {
+  font-size: 20px;
+  color: #333333;
+  line-height: 1.3;
+}
+
+.accent {
+  color: #06a9cf;
+}
+
+.weight-black {
+  font-weight: 900;
+}
+
+.sec-2__title {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 23px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sec-2__title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 3px;
+  background-color: #06a9cf;
+}
+
+.sec-2__association-block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sec-2__sub-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.sec-2__reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.sec-2__reasons-item {
+  display: flex;
+  align-items: center;
+  width: 33.33%;
+}
+
+.sec-2__reasons-title {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sec-2__reasons-text {
+  font-size: 18px;
+  color: #444444;
+  line-height: 1.5;
+}
+
+.sec-2__reasons-image {
+  border-radius: 50%;
+  display: block;
+}
+.sec-2__reasons-image-block {
+  position: relative;
+  margin-right: 20px;
+}
+
+.error-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #fb5858;
+  border-radius: 50%;
+  top: 0;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sec-2__symptoms-block {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+}
+
+.sec-2__symptoms-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  border: 2px solid #eceeee;
+  border-radius: 10px;
+}
+
+.sec-2__symptoms-image {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.sec-2__symptoms-item-title {
+  color: #444444;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.sec-2__symptoms-title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sec-2__symptoms-item {
+  width: 20%;
+  text-align: center;
+}
+
+.sec-2__accent-block {
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 40px;
+}
+
+.sec-2__accent-text {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  background-color: #fb5858;
+  padding: 15px 0;
+  border-radius: 15px;
+}
+
+.sec-2__bottom-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.sec-2__bottom-text {
+  color: #444444;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.3;
+  max-width: 830px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .sec-2__reasons-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sec-2__reasons-image-block {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .sec-2__symptoms-item {
+    width: 33.33%;
+    margin-bottom: 20px;
+  }
+  .sec-2__symptoms-list {
+    justify-content: center;
+    padding: 30px 0 10px;
+  }
+  .sec-2__accent-text {
+    padding: 15px 40px;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 759px) {
+  .sec-2__reasons-item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .sec-2__reasons-list {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  .sec-2__symptoms-item {
+    width: 50%;
+  }
+  .sec-2__reasons-item {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .sec-2__symptoms-item {
+    width: 100%;
+  }
+  .sec-2__symptoms-title {
+    padding: 0 15px;
+  }
+}
