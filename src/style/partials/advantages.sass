@@ -1,0 +1,200 @@
+.advantages
+	padding-top: 150px
+	background: url('../img/advantages_back.jpg') no-repeat center top
+	padding-bottom: 40px
+	background-size: cover
+	&__title
+		margin-bottom: 46px
+	&__list
+		display: flex
+		justify-content: space-between
+		counter-reset: section
+		padding-bottom: 50px
+		border-bottom: 1px solid #98bcc5
+		margin-bottom: 40px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			bottom: -12px
+			left: 50%
+			transform: translateX(-50%)
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 12px 15px 0 15px
+			border-color: #98bcc5 transparent transparent transparent
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			bottom: -11px
+			left: 50%
+			transform: translateX(-50%)
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 12px 15px 0 15px
+			border-color: #e7f2f5 transparent transparent transparent
+		.item
+			text-align: center
+			width: 250px
+			max-width: 100%
+			position: relative
+			.icon
+				position: absolute
+				width: 61px
+				height: 32px
+				right: -55px
+				top: 86px
+			&::after
+				counter-increment: section
+				content: counter(section)
+				position: absolute
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				font-size: 20px
+				font-weight: 500
+				color: white
+				display: flex
+				align-items: center
+				justify-content: center
+				top: 8px
+				right: 48px
+			&:nth-child(1)
+				&::after
+					background-image: linear-gradient(to left, #fab777, #f7ca6a)
+			&:nth-child(2)
+				&::after
+					background-image: linear-gradient(to left, #f69e49, #f7c559)
+			&:nth-child(3)
+				&::after
+					background-image: linear-gradient(to left, #ff7d00, #f8c455)
+			&:nth-child(4)
+				&::after
+					background-image: linear-gradient(to left, #ff3600, #f7a545)
+			&__img
+				border-radius: 50%
+				border: 8px solid white
+				margin-bottom: 7px
+			&__text
+				font-size: 18px
+				font-style: italic
+				line-height: 1.44
+				color: #444444
+	.ttl
+		text-align: center
+		line-height: 1.17
+		font-size: 24px
+		color: #333333
+		margin-bottom: 35px
+		.bold
+			color: #000000
+	.cols
+		display: flex
+		margin-bottom: 40px
+		.col
+			width: 50%
+			&__item
+				font-size: 18px
+				line-height: 1.44
+				color: #444444
+				padding-left: 60px
+				position: relative
+				+nlt
+					margin-bottom: 25px
+				.fico
+					position: absolute
+					left: 0
+					top: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 45px
+					height: 45px
+					background: #fb5858
+					color: white
+					border-radius: 50%
+					font-size: 24px
+				.bold
+					color: #000000
+	&__result
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		margin-bottom: 60px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			right: -10px
+			top: 50%
+			height: 1px
+			width: 223px
+			background: transparentize(#98bcc5, .5)
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: -10px
+			top: 50%
+			height: 1px
+			width: 223px
+			background: transparentize(#98bcc5, .5)
+		.img
+			margin-right: 27px
+		.text
+			max-width: 476px
+			font-size: 19px
+			line-height: 1.37
+			width: 100%
+	&__warning
+		border-radius: 10px
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+		background-color: #ffffff
+		position: relative
+		text-align: center
+		padding: 43px 30px 30px
+		.icon
+			position: absolute
+			top: -17px
+			transform: translateX(-50%)
+			left: 50%
+			+sprite($warn)
+			z-index: 1
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			background: white
+			height: 15px
+			width: 73px
+			transform: translateX(-50%)
+			left: 50%
+			top: 0
+			z-index: 1
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			border: 2px solid #eceeee
+			border-radius: 10px
+			left: 10px
+			right: 10px
+			top: 10px
+			bottom: 10px
+		.ttl
+			font-size: 24px
+			font-weight: 700
+			color: #fb5858
+			margin-bottom: 15px
+		.desc
+			&__text
+				font-size: 22px
+				line-height: 1.27
+				color: #444444
+				+nlt
+					margin-bottom: 20px
