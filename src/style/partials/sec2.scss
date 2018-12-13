@@ -205,6 +205,12 @@
 }
 
 @media (max-width: 992px) {
+
+  .sec-2::after,
+  .sec-2::before {
+    display: none;
+  }
+
   .sec-2__symptoms-item {
     width: 33.33%;
     margin-bottom: 20px;

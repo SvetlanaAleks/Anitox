@@ -3,38 +3,69 @@
 	background: url('../img/header__back.jpg') no-repeat center top
 	padding-bottom: 100px
 	background-size: cover
+	+r(991)
+		padding-bottom: 180px
 	&__top
 		display: flex
 		margin-bottom: 45px
+		+r(1199)
+			margin-bottom: 35px
+			justify-content: space-between
+		+r(991)
+			flex-direction: column
+			align-items: center
+		+r(767)
+			margin-bottom: 20px
+		+r(480)
+			margin-bottom: 15px
 	.logo
 		display: flex
 		align-items: center
 		margin-right: 121px
+		+r(1199)
+			margin-right: 7px
+		+r(991)
+			margin-right: 0
+			margin-bottom: 15px
+		+r(480)
+			flex-direction: column
 		&__name
 			font-family: 'Avenir', Arial, Helvetica, sans-serif
 			font-size: 30px
 			font-weight: 900
 			letter-spacing: 1.7px
 			margin-right: 14px
+			+r(480)
+				margin-bottom: 7px
 		&__text
 			color: rgba(102, 102, 102, 0.9)
 			font-size: 15px
 			line-height: 1.2
 			flex-shrink: 0
+			+r(1199)
+				font-size: 14px
 	.nav
 		display: flex
 		align-items: center
 		margin-right: 60px
+		+r(1199)
+			margin-right: 0
+		+r(991)
+			margin-bottom: 20px
 		&__item
 			flex-shrink: 0
 			+nlt
 				margin-right: 45px
+				+r(1199)
+					margin-right: 20px
 		.link
 			padding-left: 38px
 			color: #161616
 			text-decoration-color: #a09f9f
 			position: relative
 			display: inline-block
+			+r(1199)
+				font-size: 15px
 			.fico
 				position: absolute
 				left: 0
@@ -61,6 +92,14 @@
 		outline: none
 		cursor: pointer
 		position: relative
+		+r(1199)
+			font-size: 14px
+			padding-right: 15px
+			width: 250px
+		+r(991)
+			padding-right: 25px
+		+r(480)
+			width: 255px
 		&__img
 			position: absolute
 			left: 3px
@@ -70,39 +109,97 @@
 		line-height: 1
 		font-size: 32px
 		margin-bottom: 21px
+		+r(1199)
+			margin-bottom: 15px
+		+r(767)
+			text-align: center
 	&__main
 		display: flex
 		justify-content: flex-end
 		position: relative
+		+r(991)
+			justify-content: space-between
+		+r(767)
+			flex-direction: column
 		.img
 			position: absolute
 			bottom: -83px
 			left: -318px
 			pointer-events: none
+			+r(1620)
+				display: none
+		.img-media
+			position: absolute
+			bottom: 0
+			left: 0
+			display: none
+			pointer-events: none
+			+r(1620)
+				display: block
+			+r(1199)
+				width: 340px
+				max-width: 100%
+				left: -48px
+				bottom: 170px
+			+r(991)
+				display: none
 		.info
 			width: 410px
 			max-width: 100%
 			margin-right: 17px
 			position: relative
+			+r(1199)
+				margin-right: 0px
+			+r(767)
+				text-align: center
+				width: 100%
+				margin-bottom: 20px
 			.product
 				position: absolute
 				left: -493px
 				bottom: -159px
 				z-index: 1
+				+r(1620)
+					left: -453px
+				+r(1199)
+					bottom: -39px
+					left: -273px
+					width: 330px
+				+r(991)
+					left: 50%
+					bottom: -172px
+				+r(767)
+					position: static
+					left: 0
+				+r(480)
+					width: 280px
 			.logo
 				font-size: 38px
 				font-weight: 900
 				margin-bottom: 9px
+				+r(767)
+					display: none
 			.text
 				font-size: 20px
 				line-height: 1.2
 				color: #444444
 				margin-bottom: 25px
+				+r(1199)
+					margin-bottom: 17px
+					font-size: 19px
+				+r(767)
+					font-size: 17px
 				.bold
 					color: #000000
 			.list
 				margin-bottom: 19px
 				counter-reset: section
+				+r(767)
+					width: 73%
+					margin: auto
+					text-align: left
+				+r(480)
+					width: 100%
 				&__item
 					line-height: 1.29
 					font-size: 17px
@@ -110,6 +207,12 @@
 					position: relative
 					padding-left: 70px
 					display: block
+					+r(767)
+						br
+							display: none
+					+r(480)
+						padding-left: 60px
+						font-size: 15px
 					&::before
 						counter-increment: section
 						content: counter(section)
@@ -123,6 +226,8 @@
 						font-weight: 900
 					+nlt
 						margin-bottom: 25px
+						+r(480)
+							margin-bottom: 15px
 					&:last-of-type
 						padding-bottom: 32px
 						position: relative
@@ -132,6 +237,9 @@
 						display: block
 						color: #000000
 						margin-bottom: 10px
+						+r(480)
+							line-height: 1
+							margin-bottom: 5px
 				&__img
 					position: absolute
 					left: 20px
@@ -142,6 +250,16 @@
 				color: #444444
 				position: relative
 				padding-left: 71px
+				+r(767)
+					margin-bottom: 20px
+					text-align: left
+				+r(480)
+					padding-left: 0
+					text-align: center
+					&::after
+						top: -15px
+						left: 50%
+						transform: translateX(-50%)
 				&::after
 					content: ''
 					display: block
@@ -150,7 +268,10 @@
 					background-color: #06a9cf
 					top: -21px
 					width: 125px
+					
 .order-form
+	+r(767)
+		margin: auto
 	.text
 		font-size: 15px
 		color: #444444
@@ -175,6 +296,9 @@
 	position: relative
 	margin-bottom: 27px
 	box-shadow: inset 7px 7px 0 0 #f7f7f7, inset -7px -7px 0 0 #f7f7f7
+	+r(1250)
+		&::after
+			display: none
 	&::before
 		content: ''
 		display: block
