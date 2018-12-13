@@ -2,6 +2,6 @@
 
 //=require partials/app.js
 
-// $(document).ready(function () {
-//    App.init();
-// });
+$(document).ready(function () {
+   App.init();
+});
