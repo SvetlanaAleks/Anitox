@@ -14,47 +14,62 @@
 			min-height: 235px
 			&:nth-of-type(-n+3)
 				border-bottom: 1px solid #bcdce4
+				margin-bottom: 40px
 			.img-wrap
 				display: flex
 				align-items: center
-			&__img
-				//background: url('../img/A.jpg') no-repeat center
-				text-align: center
-				font-size: 110px
-				font-weight: 900
-				position: relative
-				margin-right: 35px
-				color: transparent
-				&-1
-					background: url('../img/A.jpg') no-repeat center
-					-webkit-background-clip: text
-				&-2
-					background: url('../img/B.jpg') no-repeat center
-					-webkit-background-clip: text
-				&-3
-					background: url('../img/C.jpg') no-repeat center
-					-webkit-background-clip: text
-				&-4
-					background: url('../img/D.jpg') no-repeat center
-					-webkit-background-clip: text
-				&-5
-					background: url('../img/E.jpg') no-repeat center
-					-webkit-background-clip: text
-				&-6
-					background: url('../img/M.jpg') no-repeat center
-					-webkit-background-clip: text
-				&::after
-					content: ''
-					display: block
-					position: absolute
-					height: 1px
-					width: 20px
-					background-color: #c2c2c2
-					right: -20px
-					top: 50%
+				margin-bottom: 25px
+				.icon
+					position: relative
+					left: 0
+					top: 0
+					&-vit-1
+						margin-right: 33px
+						+sprite($vit-1)
+						&::after
+							right: -20px
+					&-vit-2
+						margin-right: 43px
+						+sprite($vit-2)
+						&::after
+							right: -25px
+					&-vit-3
+						margin-right: 41px
+						+sprite($vit-3)
+						&::after
+							right: -25px
+					&-vit-4
+						margin-right: 42px
+						+sprite($vit-4)
+						&::after
+							right: -32px
+					&-vit-5
+						margin-right: 46px
+						+sprite($vit-5)
+						&::after
+							right: -25px
+					&-vit-6
+						margin-right: 34px
+						+sprite($vit-6)
+						&::after
+							right: -25px
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						height: 1px
+						width: 20px
+						background-color: #c2c2c2
+						top: 50%
+
 			&__name
 				font-size: 14px
 				color: #444444
+				i
+					display: block
+					font-style: italic
+					font-size: 15px
+					color: #666666
 			&__text
 				font-size: 18px
 				line-height: 1.44
