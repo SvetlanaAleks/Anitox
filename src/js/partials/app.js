@@ -1,1 +1,6 @@
-//Some JS
+const App = (function () {
+   "use strict";
+   return {
+      init: function () {},
+   };
+})();
