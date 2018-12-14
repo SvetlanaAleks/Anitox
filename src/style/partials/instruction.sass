@@ -2,8 +2,17 @@
 	background: #e4f7fd
 	padding-top: 135px
 	padding-bottom: 100px
+	+r(1199)
+		padding-top: 85px
+		padding-bottom: 60px
+	.row
+		+r(1199)
+			margin-right: -10px
+			margin-left: -10px
 	&__title
 		margin-bottom: 30px
+		+r(991)
+			margin-bottom: 20px
 	&__text
 		font-size: 22px
 		color: #444444
@@ -17,6 +26,12 @@
 		text-align: center
 		margin: auto
 		margin-bottom: 35px
+		+r(1199)
+			margin-bottom: 25px
+		+r(991)
+			margin-bottom: 20px
+			padding: 15px 10px
+			font-size: 20px
 	&__text2
 		font-size: 22px
 		text-align: center
@@ -25,18 +40,42 @@
 		margin-bottom: 53px
 		.bold
 			color: #000000
+		+r(1199)
+			margin-bottom: 35px
+		+r(991)
+			font-size: 20px
+			margin-bottom: 25px
 	&__content
 		margin-bottom: 57px
+		+r(1199)
+			margin-bottom: 35px
+		.wrap-mobile
+			+r(991)
+				display: flex
+				padding-bottom: 20px
+				border-bottom: 1px solid #bcdce4
 		.row-wrap
 			display: flex
 			align-items: center
 			justify-content: space-between
 			padding-bottom: 19px
 			border-bottom: 1px solid #bcdce4
+			+r(991)
+				flex-direction: column-reverse
+				align-items: flex-start
+				border: none
+			&-0
+				+r(991)
+					display: none
 			&-1
 				padding-top: 32px
 				padding-bottom: 26px
 				justify-content: flex-start
+				+r(1199)
+					justify-content: space-between
+				+r(991)
+					padding-top: 0
+					padding-bottom: 0
 			&-2
 				justify-content: flex-start
 				padding-top: 17px
@@ -45,35 +84,67 @@
 					.tablet1
 						+nlt
 							margin-right: 27px
+				+r(1199)
+					justify-content: space-between
+				+r(991)
+					padding-top: 0
+					padding-bottom: 0
 			&-3
 				padding-top: 30px
 				padding-bottom: 0
 				border-bottom: none
 				justify-content: flex-start
+				+r(991)
+					padding-top: 0
+					margin-top: 20px
 				.cell-tablet
 					align-self: flex-start
 					margin-top: 40px
+					+r(991)
+						align-self: center
+						margin-top: 0
 					.tablet1
 						+nlt
 							margin-right: 38px
 				.value
 					align-self: flex-start
 					top: 20px
+					+r(991)
+						top: auto
+						align-self: center
 		.item
 			display: flex
+			.text-ttl
+				margin-right: 80px
+				+r(1199)
+					margin-right: 57px
 		.text-ttl
-			margin-right: 80px
 			font-size: 20px
 			font-weight: 500
 			color: #000000
+			+r(1199)
+				font-size: 19px
 		.cell
 			display: flex
 			align-items: center
 			&-tablet
 				width: 400px
 				padding-left: 42px
+				+r(1199)
+					padding-left: 20px
+					max-width: 350px
+				+r(991)
+					padding-left: 0
+					margin-bottom: 20px
+					order: 1
 			&-1
 				width: 370px
+				+r(1199)
+					width: 280px
+				+r(991)
+					order: 1
+					position: relative
+					top: -27px
 			&-2
 				padding-left: 30px
 				padding-top: 32px
@@ -85,8 +156,28 @@
 				border-right: 1px solid #bcdce4
 				.value
 					margin-right: 30px
+				+r(1199)
+					width: 320px
+					max-width: 100%
+					padding-left: 10px
+					padding-right: 10px
+					.value
+						margin-right: 12px
+				+r(991)
+					border: none
+					padding: 0
+					margin: 0
+					position: relative
+					top: -26px
 			&-3
 				width: 370px
+				+r(1199)
+					width: 280px
+					.value
+						margin-right: 25px
+				+r(991)
+					order: 1
+					margin-bottom: 12px
 				.value
 					margin-right: 50px
 			&-4
@@ -100,11 +191,27 @@
 				border-right: 1px solid #bcdce4
 				.value
 					margin-right: 54px
+				+r(1199)
+					width: 320px
+					max-width: 100%
+					padding-left: 10px
+					padding-right: 10px
+					.value
+						margin-right: 34px
+				+r(991)
+					border: none
+					padding: 0
+					margin: 0
 			&-5
 				width: 760px
 				padding-top: 30px
 				margin-top: -30px
 				border-right: 1px solid #bcdce4
+				+r(991)
+					border: none
+					padding: 0
+					margin: 0
+					justify-content: center
 			.fico
 				color: #fab777
 				font-size: 62px
@@ -113,22 +220,32 @@
 				align-items: center
 				+nlt
 					margin-right: 60px
+				+r(1199)
+					margin-right: 45px
 				.tab-img
 					margin-right: 10px
+					+r(1199)
+						margin-right: 5px
 					&--big
 						margin-right: 20px
 						align-self: flex-end
+						+r(1199)
+							margin-right: 10px
 				.text
 					font-size: 18px
 					line-height: 1.11
 					color: #444444
 					flex-shrink: 0
+					+r(1199)
+						font-size: 16px
 	.value
 		margin-right: 60px
 		display: flex
 		flex-direction: column
 		align-items: center
 		position: relative
+		+r(1199)
+			margin-right: 30px
 		.num
 			position: absolute
 			top: 30px
@@ -141,16 +258,26 @@
 			color: #444444
 	.animal1
 		margin-right: 44px
+		+r(1199)
+			margin-right: 25px
 	.animal3
 		margin-right: 30px
+		+r(1199)
+			margin-right: 10px
 	.animal5
 		margin-right: 25px
+		+r(1199)
+			margin-right: 16px
 	.animal7
 		margin-right: 31px
 	.animal9
 		margin-right: 120px
+		+r(1199)
+			margin-right: 55px
 	.animal10
 		margin-right: 130px
+		+r(1199)
+			margin-right: 76px
 	&__desc
 		text-align: center
 		font-size: 24px
@@ -167,14 +294,25 @@
 		align-items: center
 		justify-content: center
 		margin-bottom: 30px
+		+r(1199)
+			margin-bottom: 20px
+		+r(991)
+			font-size: 20px
 		.color
 			background-color: #5fb44e
 			border-radius: 10px
 			padding: 12px 0
 			max-width: 1159px
 			width: 100%
+			+r(991)
+				margin: 0 10px
 	&__result
 		font-size: 19px
 		color: #000000
 		text-align: center
 		line-height: 1.26
+		+r(1199)
+			font-size: 18px
+		+r(991)
+			br
+				display: none
