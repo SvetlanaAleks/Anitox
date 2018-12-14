@@ -2,9 +2,19 @@
 	background: url('../img/advantages_back.jpg') no-repeat center top
 	padding-bottom: 100px
 	padding-top: 144px
+	+r(1199)
+		padding-top: 100px
+	.row
+		+r(575)
+			margin-right: 10px
+			margin-left: 10px
 	&__title
 		line-height: 1
 		margin-bottom: 46px
+		+r(1199)
+			margin-bottom: 35px
+		+r(767)
+			margin-bottom: 20px
 	&__list
 		display: flex
 		justify-content: space-between
@@ -16,10 +26,38 @@
 			&:nth-of-type(-n+3)
 				border-bottom: 1px solid #bcdce4
 				margin-bottom: 40px
+			+r(1199)
+				max-width: 300px
+			+r(991)
+				max-width: 350px
+				min-height: 0
+				&:nth-of-type(-n+4)
+					border-bottom: 1px solid #bcdce4
+					margin-bottom: 20px
+					padding-bottom: 20px
+			+r(767)
+				max-width: 100%
+				display: flex
+				align-items: center
+				&:nth-of-type(-n+5)
+					margin-bottom: 15px
+					padding-bottom: 15px
+					border-bottom: 1px solid #bcdce4
+			+r(479)
+					&:nth-of-type(-n+5)
+						margin-bottom: 5px
+						padding-bottom: 5px
 			.img-wrap
 				display: flex
 				align-items: center
 				margin-bottom: 25px
+				+r(1199)
+					margin-bottom: 15px
+				+r(767)
+					flex-direction: column
+					justify-content: flex-start
+					align-items: flex-start
+					margin-bottom: 0
 				.icon
 					position: relative
 					left: 0
@@ -62,7 +100,6 @@
 						width: 20px
 						background-color: #c2c2c2
 						top: 50%
-
 			&__name
 				font-size: 14px
 				color: #444444
@@ -71,7 +108,15 @@
 					font-style: italic
 					font-size: 15px
 					color: #666666
+				+r(767)
+					display: none
 			&__text
 				font-size: 18px
 				line-height: 1.44
 				color: #444444
+				+r(1199)
+					font-size: 17px
+				+r(767)
+					font-size: 16px
+				+r(479)
+					font-size: 15px
