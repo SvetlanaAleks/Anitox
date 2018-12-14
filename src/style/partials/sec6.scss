@@ -9,13 +9,33 @@
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 45px;
+  max-width: 1120px;
+  margin: 0 auto 45px;
 }
 .sec-6__compos-block {
-  width: 50%;
+  width: 40%;
 }
+.sec-6__compos-pills {
+  width: 20%;
+}
+
 .sec-6__compos-left {
   text-align: right;
+  position: relative;
+}
+// .sec-6__compos-left::after {
+//   height: 268px;
+//   width: 158px;
+//   position: absolute;
+//   content: "";
+//   top: calc(50% - 130px);
+//   right: -50px;
+//   background-size: contain;
+//   background-image: url(../../img/sec6_t1.png);
+// }
+
+.sec-6__compos-list {
+  display: flex;
 }
 
 .sec-6__compos-head {
@@ -51,6 +71,7 @@
 .sec-6__compos-item {
   // margin-top: 35px;
   display: flex;
+  max-width: 470px;
   align-items: center;
 }
 .sec-6__compos-info {
@@ -64,4 +85,12 @@
 .sec-6__compos-image-b {
   width: 170px;
   text-align: center;
+}
+
+.sec-6__compos-head--right {
+  text-align: left;
+}
+
+.sec-6__compos-right .sec-6__compos-info {
+  margin-left: 20px;
 }
