@@ -32,6 +32,10 @@
 			margin-bottom: 20px
 			padding: 15px 10px
 			font-size: 20px
+		+r(767)
+			padding: 7px
+			font-size: 18px
+			margin-bottom: 10px
 	&__text2
 		font-size: 22px
 		text-align: center
@@ -45,15 +49,30 @@
 		+r(991)
 			font-size: 20px
 			margin-bottom: 25px
+		+r(767)
+			margin-bottom: 15px
+			font-size: 17px
 	&__content
 		margin-bottom: 57px
 		+r(1199)
 			margin-bottom: 35px
+		+r(767)
+			margin-bottom: 25px
 		.wrap-mobile
 			+r(991)
 				display: flex
 				padding-bottom: 20px
 				border-bottom: 1px solid #bcdce4
+			+r(767)
+				flex-direction: column
+				padding-bottom: 0
+				border: 0
+				align-items: center
+			.row-wrap
+				+r(767)
+					padding-bottom: 20px
+					margin-bottom: 20px
+					border-bottom: 1px solid #bcdce4
 		.row-wrap
 			display: flex
 			align-items: center
@@ -64,6 +83,9 @@
 				flex-direction: column-reverse
 				align-items: flex-start
 				border: none
+			+r(767)
+				align-items: flex-start
+				justify-content: center
 			&-0
 				+r(991)
 					display: none
@@ -97,6 +119,8 @@
 				+r(991)
 					padding-top: 0
 					margin-top: 20px
+				+r(767)
+					margin-top: 0
 				.cell-tablet
 					align-self: flex-start
 					margin-top: 40px
@@ -137,6 +161,8 @@
 					padding-left: 0
 					margin-bottom: 20px
 					order: 1
+				+r(767)
+					margin-bottom: 15px
 			&-1
 				width: 370px
 				+r(1199)
@@ -145,6 +171,9 @@
 					order: 1
 					position: relative
 					top: -27px
+				+r(767)
+					position: static
+					margin-bottom: 10px
 			&-2
 				padding-left: 30px
 				padding-top: 32px
@@ -169,6 +198,8 @@
 					margin: 0
 					position: relative
 					top: -26px
+				+r(767)
+					position: static
 			&-3
 				width: 370px
 				+r(1199)
@@ -212,6 +243,9 @@
 					padding: 0
 					margin: 0
 					justify-content: center
+				+r(767)
+					justify-content: initial
+					width: auto
 			.fico
 				color: #fab777
 				font-size: 62px
@@ -298,6 +332,8 @@
 			margin-bottom: 20px
 		+r(991)
 			font-size: 20px
+		+r(767)
+			font-size: 18px
 		.color
 			background-color: #5fb44e
 			border-radius: 10px
@@ -316,3 +352,5 @@
 		+r(991)
 			br
 				display: none
+		+r(767)
+			font-size: 16px
