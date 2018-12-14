@@ -1,6 +1,6 @@
 .sec-8 {
   padding-top: 76px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -11,6 +11,15 @@
   width: 100%;
   height: 97px;
   top: -70px;
+}
+
+.sec-8::before {
+  position: absolute;
+  content: "";
+  background: url('../img/line-top.png') center bottom;
+  width: 100%;
+  height: 97px;
+  bottom: -45px;
 }
 
 .sec-8__title {
@@ -116,7 +125,9 @@
 }
 
 @media (max-width: 992px) {
-  .sec-8::after {
+
+  .sec-8::after,
+  .sec-8::before {
     display: none;
   }
 }
