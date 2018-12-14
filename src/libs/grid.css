@@ -5,6 +5,12 @@
   margin-left: auto;
 }
 
+@media (max-width: 479px) {
+  .container {
+    width: 320px;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     width: 540px;
