@@ -9,10 +9,15 @@
 		+r(1199)
 			margin-right: -10px
 			margin-left: -10px
+		+r(479)
+			margin-right: 0
+			margin-left: 0
 	&__title
 		margin-bottom: 30px
 		+r(991)
 			margin-bottom: 20px
+		+r(575)
+			margin-bottom: 15px
 	&__text
 		font-size: 22px
 		color: #444444
@@ -23,6 +28,7 @@
 		border: 1px solid #e0e1e1
 		display: block
 		max-width: 600px
+		width: 100%
 		text-align: center
 		margin: auto
 		margin-bottom: 35px
@@ -36,6 +42,9 @@
 			padding: 7px
 			font-size: 18px
 			margin-bottom: 10px
+		+r(575)
+			max-width: 300px
+			font-size: 16px
 	&__text2
 		font-size: 22px
 		text-align: center
@@ -52,6 +61,11 @@
 		+r(767)
 			margin-bottom: 15px
 			font-size: 17px
+		+r(575)
+			max-width: 350px
+			margin: auto
+			width: 100%
+			margin-bottom: 15px
 	&__content
 		margin-bottom: 57px
 		+r(1199)
@@ -84,8 +98,9 @@
 				align-items: flex-start
 				border: none
 			+r(767)
-				align-items: flex-start
 				justify-content: center
+			+r(479)
+				align-items: center
 			&-0
 				+r(991)
 					display: none
@@ -162,6 +177,7 @@
 					margin-bottom: 20px
 					order: 1
 				+r(767)
+					width: auto
 					margin-bottom: 15px
 			&-1
 				width: 370px
@@ -174,6 +190,11 @@
 				+r(767)
 					position: static
 					margin-bottom: 10px
+				+r(479)
+					flex-direction: column
+					width: auto
+					.value
+						margin-right: 0
 			&-2
 				padding-left: 30px
 				padding-top: 32px
@@ -200,6 +221,11 @@
 					top: -26px
 				+r(767)
 					position: static
+				+r(479)
+					width: auto
+					flex-direction: column
+					.value
+						margin-right: 0
 			&-3
 				width: 370px
 				+r(1199)
@@ -207,10 +233,16 @@
 					.value
 						margin-right: 25px
 				+r(991)
+					width: 100%
 					order: 1
 					margin-bottom: 12px
-				.value
-					margin-right: 50px
+					.value
+						margin-right: 50px
+				+r(479)
+					width: auto
+					flex-direction: column
+					.value
+						margin-right: 0
 			&-4
 				padding-left: 30px
 				padding-top: 17px
@@ -233,19 +265,32 @@
 					border: none
 					padding: 0
 					margin: 0
+				+r(479)
+					width: auto
+					flex-direction: column
+					.value
+						margin-right: 0
 			&-5
 				width: 760px
 				padding-top: 30px
 				margin-top: -30px
 				border-right: 1px solid #bcdce4
 				+r(991)
+					width: 100%
 					border: none
 					padding: 0
 					margin: 0
 					justify-content: center
-				+r(767)
-					justify-content: initial
-					width: auto
+				+r(575)
+					align-self: center
+					.value
+						margin-right: 15px
+				+r(479)
+					flex-direction: column
+					.value
+						margin-right: 0
+					.img-wrap
+						text-align: center
 			.fico
 				color: #fab777
 				font-size: 62px
@@ -254,6 +299,8 @@
 				align-items: center
 				+nlt
 					margin-right: 60px
+				+r(479)
+					margin-right: 0
 				+r(1199)
 					margin-right: 45px
 				.tab-img
@@ -272,6 +319,8 @@
 					flex-shrink: 0
 					+r(1199)
 						font-size: 16px
+					+r(479)
+						font-size: 15px
 	.value
 		margin-right: 60px
 		display: flex
@@ -280,6 +329,8 @@
 		position: relative
 		+r(1199)
 			margin-right: 30px
+		+r(479)
+			margin-right: 0
 		.num
 			position: absolute
 			top: 30px
@@ -308,10 +359,14 @@
 		margin-right: 120px
 		+r(1199)
 			margin-right: 55px
+		+r(767)
+			margin-right: 25px
 	.animal10
 		margin-right: 130px
 		+r(1199)
 			margin-right: 76px
+		+r(767)
+			margin-right: 35px
 	&__desc
 		text-align: center
 		font-size: 24px
@@ -334,13 +389,17 @@
 			font-size: 20px
 		+r(767)
 			font-size: 18px
+		+r(575)
+			max-width: 300px
+			font-size: 16px
+			margin-bottom: 10px
 		.color
 			background-color: #5fb44e
 			border-radius: 10px
 			padding: 12px 0
 			max-width: 1159px
 			width: 100%
-			+r(991)
+			+r(1199)
 				margin: 0 10px
 	&__result
 		font-size: 19px
