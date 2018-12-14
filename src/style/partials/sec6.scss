@@ -1,8 +1,32 @@
 .dark-accent {
   color: #2a98c6;
 }
+
 .light-accent {
   color: #58d5e3;
+}
+
+.sec-6 {
+  position: relative;
+  padding-top: 80px;
+}
+
+.sec-6::after {
+  position: absolute;
+  content: "";
+  background: url('../img/line-bottom.png') center top;
+  width: 100%;
+  height: 97px;
+  top: -82px;
+}
+
+.sec-6::before {
+  position: absolute;
+  content: "";
+  background: url('../img/line-top.png') center bottom;
+  width: 100%;
+  height: 97px;
+  bottom: -35px;
 }
 
 .sec-6__title {
@@ -12,9 +36,11 @@
   max-width: 1120px;
   margin: 0 auto 45px;
 }
+
 .sec-6__compos-block {
   width: 40%;
 }
+
 .sec-6__compos-pills {
   width: 20%;
 }
@@ -23,6 +49,7 @@
   text-align: right;
   position: relative;
 }
+
 // .sec-6__compos-left::after {
 //   height: 268px;
 //   width: 158px;
@@ -51,6 +78,7 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .sec-6__compos-s-title {
   color: #444444;
   font-size: 18px;
@@ -74,6 +102,7 @@
   max-width: 470px;
   align-items: center;
 }
+
 .sec-6__compos-info {
   max-width: 300px;
   margin-right: 20px;
@@ -93,4 +122,12 @@
 
 .sec-6__compos-right .sec-6__compos-info {
   margin-left: 20px;
+}
+
+@media (max-width: 992px) {
+
+  .sec-6::after,
+  .sec-6::before {
+    display: none;
+  }
 }

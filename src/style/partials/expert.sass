@@ -3,20 +3,47 @@
 	padding-top: 100px
 	overflow: hidden
 	background-color: #e4f7fd
+	+r(1199)
+		padding-top: 60px
+	+r(991)
+		padding-bottom: 0
 	.container
 		padding-bottom: 100px
 		position: relative
+		+r(1199)
+			padding-bottom: 60px
+		+r(991)
+			padding-bottom: 230px
+		+r(767)
+			padding-bottom: 0
 	.img
 		position: absolute
 		bottom: 0
-		left: 0
+		left: -40px
+		+r(1250)
+			left: -20px
 		+r(1199)
+			left: -12px
+			width: 400px
+			max-width: 100%
+		+r(991)
+			right: 0
+			left: auto
+			width: 250px
+		+r(767)
+			display: none
 	&__title
 		margin-bottom: 10px
+		+r(991)
+			margin-bottom: 20px
+		+r(479)
+			margin-bottom: 15px
 	&__content
 		width: 58%
 		margin-left: auto
 		position: relative
+		+r(991)
+			width: 100%
 	.desc
 		font-size: 18px
 		line-height: 1.56
@@ -25,9 +52,32 @@
 		overflow: hidden
 		margin-bottom: 108px
 		color: #444444
+		+r(1199)
+			height: 460px
+		+r(991)
+			height: 380px
+			margin-top: 0
+		+r(767)
+			margin-bottom: 60px
+			font-size: 16px
+			height: 360px
+		+r(479)
+			height: 550px
 		.text
 			+nlt
 				margin-bottom: 30px
+			+r(1199)
+				br
+					display: none
+				+nlt
+					margin-bottom: 15px
+			+r(991)
+				+nlt
+					margin-bottom: 15px
+			+r(479)
+				font-size: 15px
+				+nlt
+					margin-bottom: 7px
 			&-grey
 				font-weight: 500
 				color: transparentize(#444444, .6)
@@ -37,6 +87,14 @@
 				color: #444444
 			&~.show
 				transform: rotate(180deg)
+			+r(1199)
+				height: auto
+			+r(991)
+				height: auto
+			+r(767)
+				height: auto
+			+r(479)
+				height: auto
 		.bold
 			color: #000000
 	.show
@@ -54,6 +112,15 @@
 		display: flex
 		align-items: center
 		justify-content: center
+		transition: all .3s
+		&:hover
+			box-shadow: 0px 5px 20px 0 rgba(248, 196, 110, 0.46)
+		+r(991)
+			bottom: 98px
+		+r(767)
+			bottom: 68px
+		+r(479)
+			bottom: 57px
 		.fico
 			position: absolute
 			font-size: 12px
@@ -75,6 +142,16 @@
 			left: 254px
 			top: 0
 			+sprite($sign)
+		+r(767)
+			font-size: 22px
+		+r(479)
+			font-size: 20px
+			margin-bottom: 5px
+			&::after
+				transform: scale(.8)
+				left: 204px
 	.post
 		font-style: italic
 		color: #666666
+		+r(479)
+			font-size: 14px
