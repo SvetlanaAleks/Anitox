@@ -64,6 +64,9 @@
 			text-decoration-color: #a09f9f
 			position: relative
 			display: inline-block
+			transition: all .3s
+			&:hover
+				text-decoration-color: transparentize(#a09f9f, .7)
 			+r(1199)
 				font-size: 15px
 			.fico
@@ -92,6 +95,9 @@
 		outline: none
 		cursor: pointer
 		position: relative
+		transition: all .3s
+		&:hover
+			box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.1)
 		+r(1199)
 			font-size: 14px
 			padding-right: 15px
