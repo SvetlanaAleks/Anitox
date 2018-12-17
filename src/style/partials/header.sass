@@ -5,6 +5,8 @@
 	background-size: cover
 	+r(991)
 		padding-bottom: 190px
+	&--bottom
+		padding-top: 109px
 	&__top
 		display: flex
 		margin-bottom: 45px
@@ -64,6 +66,9 @@
 			text-decoration-color: #a09f9f
 			position: relative
 			display: inline-block
+			transition: all .3s
+			&:hover
+				text-decoration-color: transparentize(#a09f9f, .7)
 			+r(1199)
 				font-size: 15px
 			.fico
@@ -92,6 +97,9 @@
 		outline: none
 		cursor: pointer
 		position: relative
+		transition: all .3s
+		&:hover
+			box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.1)
 		+r(1199)
 			font-size: 14px
 			padding-right: 15px
@@ -350,7 +358,7 @@
 		.new, .old
 			text-align: center
 			&__text
-				margin-bottom: 11px
+				margin-bottom: 6px
 				font-size: 13px
 				color: #777777
 		.old
@@ -482,7 +490,7 @@
 	box-shadow: 0 12px 23px -10px #fca97f
 	border-radius: 32px
 	transition: .5s
-	line-height: 1.06
+	line-height: 1
 	position: relative
 	z-index: 1
 	&:hover

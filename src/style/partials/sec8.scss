@@ -1,5 +1,25 @@
 .sec-8 {
-  padding: 90px 0;
+  padding-top: 76px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.sec-8::after {
+  position: absolute;
+  content: "";
+  background: url('../img/line-bottom.png') center top;
+  width: 100%;
+  height: 97px;
+  top: -70px;
+}
+
+.sec-8::before {
+  position: absolute;
+  content: "";
+  background: url('../img/line-top.png') center bottom;
+  width: 100%;
+  height: 97px;
+  bottom: -45px;
 }
 
 .sec-8__title {
@@ -17,6 +37,7 @@
   border-radius: 5px;
   background-color: #000;
 }
+
 .sec-8__video-box iframe {
   width: 330px;
   height: 250px;
@@ -55,6 +76,7 @@
   background-color: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
 }
+
 .sec-8__slide-user {
   margin-right: 25px;
 }
@@ -87,9 +109,11 @@
   background-color: #5fb44e;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.07);
 }
+
 .slick-dots li button:before {
   content: "";
 }
+
 .slick-list {
   padding-bottom: 35px;
 }
@@ -312,5 +336,13 @@
   }
   .sec-8__slider-box {
     width: 85%;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .sec-8::after,
+  .sec-8::before {
+    display: none;
   }
 }
