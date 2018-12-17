@@ -7,7 +7,7 @@
 .sec-2::after {
   position: absolute;
   content: "";
-  background: url('../img/line-bottom.png') center top;
+  background: url("../img/line-bottom.png") center top;
   width: 100%;
   height: 97px;
   top: -66px;
@@ -16,7 +16,7 @@
 .sec-2::before {
   position: absolute;
   content: "";
-  background: url('../img/line-top.png') center bottom;
+  background: url("../img/line-top.png") center bottom;
   width: 100%;
   height: 97px;
   bottom: -75px;
@@ -205,7 +205,6 @@
 }
 
 @media (max-width: 992px) {
-
   .sec-2::after,
   .sec-2::before {
     display: none;
@@ -237,6 +236,12 @@
     justify-content: center;
     margin-bottom: 0;
   }
+  .sec-2__accent-text {
+    font-size: 20px;
+  }
+  .sec-2__bottom-text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -246,6 +251,20 @@
 
   .sec-2__reasons-item {
     width: 100%;
+  }
+}
+@media (max-width: 479px) {
+  .sec-2__symptoms-item {
+    width: 100%;
+  }
+  .sec-2__symptoms-item-title {
+    padding: 0 10px;
+  }
+  .sec-2__association-title {
+    font-size: 18px;
+  }
+  .sec-2__sub-title {
+    font-size: 20px;
   }
 }
 

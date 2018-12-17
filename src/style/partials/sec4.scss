@@ -7,7 +7,7 @@
 .sec-4::after {
   position: absolute;
   content: "";
-  background: url('../img/line-bottom.png') center top;
+  background: url("../img/line-bottom.png") center top;
   width: 100%;
   height: 97px;
   top: -66px;
@@ -16,7 +16,7 @@
 .sec-4:before {
   position: absolute;
   content: "";
-  background: url('../img/line-top.png') center bottom;
+  background: url("../img/line-top.png") center bottom;
   width: 100%;
   height: 97px;
   bottom: -69px;
@@ -151,7 +151,6 @@
 }
 
 @media (max-width: 992px) {
-
   .sec-4::after,
   .sec-4::before {
     display: none;
@@ -172,6 +171,12 @@
   }
 }
 
+@media (max-width: 769px) {
+  .sec-4__bottom-text {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 500px) {
   .sec-4__facilities-content {
     padding-left: 0;
@@ -181,5 +186,14 @@
   .sec-4__facilities-content--first::after,
   .sec-4__facilities-content--second::after {
     left: calc(50% - 35px);
+  }
+}
+
+@media (max-width: 479px) {
+  .sec-4__bottom-text {
+    font-size: 18px;
+  }
+  .sec-4__facilities-block {
+    padding: 10px;
   }
 }

@@ -52,6 +52,7 @@
 .sec-8__slide-item {
   border-radius: 10px;
   margin: 0 15px;
+  background-color: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
 }
 .sec-8__slide-user {
@@ -61,6 +62,7 @@
 .sec-8__slide-name {
   font-size: 16px;
   text-align: center;
+  line-height: 1.3;
 }
 
 .sec-8__slide-review {
@@ -93,9 +95,222 @@
 }
 
 .sec-8__slider-box {
+  width: 90%;
   position: relative;
+  margin: 0 auto;
 }
 
 .slick-arrows-block {
+  top: 100px;
+  display: flex;
+  width: 100%;
   position: absolute;
+}
+
+.sec-8__overflow {
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sec-8__overflow:after {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.active .sec-8__overflow {
+  width: 100%;
+  max-height: 100%;
+}
+.active .sec-8__overflow:after {
+  opacity: 0;
+}
+
+.sec-8-composition-btn {
+  cursor: pointer;
+  margin: 15px auto 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+  border: 1px solid transparent;
+  background: #f7c96b;
+  background: linear-gradient(90deg, #f7c96b 0, #fab876 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7c96b", endColorstr="#fab876", GradientType=1);
+}
+
+.slick-next,
+.slick-prev {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 44px;
+  fill: rgb(225, 225, 225);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.slick-prev {
+  left: -35px;
+}
+.slick-next {
+  right: -35px;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  fill: #06a8ce;
+}
+
+.slick-next:before,
+[dir="rtl"] .slick-prev:before {
+  content: "";
+}
+
+@media (max-width: 1200px) {
+  .sec-8__slide-wrap {
+    flex-direction: column;
+  }
+  .sec-8__slide-user {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .sec-8__slide-image {
+    margin: 0 auto 20px;
+  }
+  .sec-8__video,
+  .sec-8__video-box iframe {
+    width: 260px;
+    height: 250px;
+  }
+  .youtube .thumb {
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .sec-8__slide-wrap {
+    flex-direction: row;
+  }
+  .sec-8__slide-user {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
+  .sec-8__videos {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .sec-8__video-box {
+    margin: 10px;
+  }
+  .sec-8__video,
+  .sec-8__video-box iframe {
+    width: 290px;
+  }
+}
+
+@media (max-width: 759px) {
+  .sec-8__video-box {
+    margin: 0 0 20px;
+  }
+  .youtube .thumb {
+    height: auto;
+  }
+  .sec-8__video,
+  .sec-8__video-box iframe {
+    width: 400px;
+  }
+}
+
+@media (max-width: 580px) {
+  .sec-8__slider-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 540px) {
+  .sec-8__slide-wrap {
+    flex-direction: column;
+  }
+  .sec-8__slide-user {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .sec-8__slide-image {
+    margin: 0 auto 20px;
+  }
+  .sec-8-composition-btn {
+    display: flex;
+  }
+  .sec-8__overflow:after {
+    display: block;
+  }
+  .sec-8__overflow {
+    max-height: 200px;
+  }
+  .slick-list {
+    padding-bottom: 50px;
+  }
+  .slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 479px) {
+  .sec-8__video,
+  .sec-8__video-box iframe {
+    width: 270px;
+    height: 200px;
+  }
+  .youtube .thumb {
+    height: 100%;
+  }
+  .sec-8__slide-wrap {
+    padding: 15px;
+  }
+  .sec-8__slider-box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 370px) {
+  .slick-prev {
+    left: -25px;
+  }
+  .slick-next {
+    right: -25px;
+  }
+  .sec-8__slider-box {
+    width: 85%;
+  }
 }
