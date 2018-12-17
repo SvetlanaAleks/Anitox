@@ -65,16 +65,16 @@
 			max-width: 100%
 			position: relative
 			+r(991)
+				.line
+					display: none
 				&:nth-of-type(-n+2)
 					margin-bottom: 20px
 			+r(767)
-				.line
-					display: none
 				&:nth-of-type(-n+3)
 					margin-bottom: 20px
 			+r(479)
 				&:nth-of-type(-n+3)
-					margin-bottom: 15px
+					margin-bottom: 25px
 			.icon
 				position: absolute
 				width: 61px
@@ -112,9 +112,6 @@
 			&:nth-child(2)
 				&::after
 					background-image: linear-gradient(to left, #f69e49, #f7c559)
-				+r(991)
-					.line
-						display: none
 			&:nth-child(3)
 				&::after
 					background-image: linear-gradient(to left, #ff7d00, #f8c455)
@@ -307,6 +304,8 @@
 			+r(479)
 				font-size: 20px
 		.desc
+			position: relative
+			z-index: 2
 			&__text
 				font-size: 22px
 				line-height: 1.27

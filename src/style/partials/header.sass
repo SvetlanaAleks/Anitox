@@ -97,9 +97,11 @@
 		outline: none
 		cursor: pointer
 		position: relative
-		transition: all .3s
+		transition: all .5s
 		&:hover
-			box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.1)
+			transition: all .5s
+			color: white
+			background: #00b544
 		+r(1199)
 			font-size: 14px
 			padding-right: 15px
@@ -449,9 +451,9 @@
 			+placeholder
 				font-family: 'Roboto', Arial, Helvetica, sans-serif
 			&:hover
-				box-shadow: inset 0px 2px 7px 0 transparentize(#fca97f, .6)
+				box-shadow: inset 0px 2px 7px 0 lightblue
 			&:focus
-				box-shadow: inset 0px 2px 7px 0 transparentize(#fca97f, .6)
+				box-shadow: inset 0px 2px 7px 0 lightblue
 	.foodnote
 		color: rgba(black, .7)
 		text-align: center
