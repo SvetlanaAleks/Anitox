@@ -21,7 +21,7 @@ $(document).ready(function () {
       {
         breakpoint: 541,
         settings: {
-          adaptiveHeight: false,
+          adaptiveHeight: false
         }
       }
     ]
