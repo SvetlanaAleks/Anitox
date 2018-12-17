@@ -21,7 +21,8 @@ $(document).ready(function () {
       {
         breakpoint: 541,
         settings: {
-          adaptiveHeight: false
+          slidesToShow: 1,
+          adaptiveHeight: true
         }
       }
     ]
