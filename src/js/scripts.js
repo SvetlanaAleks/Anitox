@@ -7,6 +7,7 @@ $(document).ready(function () {
     nextArrow: $(".slick-next"),
     slidesToShow: 2,
     slidesToScroll: 2,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 992,
