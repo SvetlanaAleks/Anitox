@@ -21,7 +21,11 @@ $(document).ready(function () {
         breakpoint: 541,
         settings: {
           slidesToShow: 1,
+<<<<<<< HEAD
           adaptiveHeight: false
+=======
+          adaptiveHeight: true
+>>>>>>> aeb0042db2c58d9199cc8083640b116570af8e7f
         }
       }
     ]
