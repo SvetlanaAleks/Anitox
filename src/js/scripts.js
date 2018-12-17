@@ -8,8 +8,7 @@ $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 2,
     adaptiveHeight: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
@@ -21,6 +20,7 @@ $(document).ready(function () {
       {
         breakpoint: 541,
         settings: {
+          slidesToShow: 1,
           adaptiveHeight: false
         }
       }
@@ -66,4 +66,3 @@ if (innerWidth <= "769") {
     elem.innerHTML = " ";
   });
 }
-
