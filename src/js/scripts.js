@@ -17,6 +17,12 @@ $(document).ready(function () {
           infinite: true,
           dots: true
         }
+      },
+      {
+        breakpoint: 541,
+        settings: {
+          adaptiveHeight: false,
+        }
       }
     ]
   });
