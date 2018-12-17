@@ -134,6 +134,7 @@
   padding-bottom: 0;
   margin-bottom: 20px;
 }
+
 .sec-6__compos-right .sec-6__compos-info--first {
   padding-top: 0px;
 }
@@ -148,6 +149,7 @@
   padding: 0;
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
+
 .active .description {
   max-height: 190px;
   padding-top: 25px;
@@ -168,22 +170,16 @@
   font-size: 25px;
   border: 1px solid transparent;
   background: rgb(247, 201, 107);
-  background: -moz-linear-gradient(
-    90deg,
+  background: -moz-linear-gradient(90deg,
     rgba(247, 201, 107, 1) 0%,
-    rgba(250, 184, 118, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
+    rgba(250, 184, 118, 1) 100%);
+  background: -webkit-linear-gradient(90deg,
     rgba(247, 201, 107, 1) 0%,
-    rgba(250, 184, 118, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
+    rgba(250, 184, 118, 1) 100%);
+  background: linear-gradient(90deg,
     rgba(247, 201, 107, 1) 0%,
-    rgba(250, 184, 118, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7c96b",endColorstr="#fab876",GradientType=1);
+    rgba(250, 184, 118, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7c96b", endColorstr="#fab876", GradientType=1);
 }
 
 .plus::after {
@@ -215,6 +211,7 @@
 .sec-6__compos-head--right {
   position: relative;
 }
+
 .sec-6__left-arrow {
   position: absolute;
   right: -73px;
@@ -231,7 +228,7 @@
 .bottom-line {
   width: 100%;
   height: 11px;
-  background-image: url(../../img/sec-6__bottom-line.png);
+  background-image: url(../img/sec-6__bottom-line.png);
   background-position: center;
   background-size: cover;
 }
@@ -257,28 +254,36 @@
   .sec-6__compos-head {
     width: 100%;
   }
+
   .sec-6__compos-head {
     height: 125px;
   }
+
   .sec-6__compos-info {
     max-width: 230px;
   }
+
   .sec-6__compos-item {
     max-width: 350px;
   }
+
   .plus::after {
     width: 135px;
   }
+
   .sec-6__pills-left,
   .sec-6__pills-right {
     width: 140px;
   }
+
   .sec-6__pills-left {
     left: 40px;
   }
+
   .sec-6__pills-right {
     right: 15px;
   }
+
   .sec-10__image-first {
     max-width: 200px;
   }
@@ -304,19 +309,24 @@
   .sec-6__compos-block {
     width: 50%;
   }
+
   .sec-6__compos-pills {
     display: none;
   }
+
   .sec-6__compos-item {
     min-height: 170px;
   }
+
   .sec-6__compos-head {
     width: 95%;
     text-align: center;
   }
+
   .sec-6__ginseng-image {
     max-width: 130px;
   }
+
   .sec-6__left-arrow {
     display: none;
   }
@@ -342,15 +352,18 @@
   .sec-6__compos-block {
     width: 100%;
   }
+
   .sec-6__compos-item {
     max-width: 100%;
     min-height: auto;
     margin-bottom: 20px;
   }
+
   .sec-6__compos-info {
     max-width: 360px;
     margin-bottom: 0;
   }
+
   .plus::after {
     width: 315px;
   }
@@ -375,13 +388,16 @@
     width: 100%;
     height: auto;
   }
+
   .sec-6__compos-info {
     text-align: center;
     padding-top: 15px;
   }
+
   .sec-6__compos-head {
     text-align: center;
   }
+
   .sec-6__compos-right .sec-6__compos-info {
     margin-left: 0;
   }
@@ -389,13 +405,16 @@
   .sec-6__compos-right .sec-6__flex-box {
     flex-direction: column;
   }
+
   .sec-6__compos-right .sec-6__compos-name {
     margin-top: 20px;
   }
+
   .sec-6__flex-box {
     flex-direction: column-reverse;
     align-items: center;
   }
+
   .plus::after {
     width: 240px;
   }
@@ -413,3 +432,11 @@
   }
 }
 
+
+@media (max-width: 992px) {
+
+  .sec-6::after,
+  .sec-6::before {
+    display: none;
+  }
+}

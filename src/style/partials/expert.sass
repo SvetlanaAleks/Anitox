@@ -5,16 +5,12 @@
 	background-color: #e4f7fd
 	+r(1199)
 		padding-top: 60px
-	+r(991)
-		padding-bottom: 0
 	.container
 		padding-bottom: 100px
 		position: relative
 		+r(1199)
-			padding-bottom: 60px
+			padding-bottom: 80px
 		+r(991)
-			padding-bottom: 230px
-		+r(767)
 			padding-bottom: 0
 	.img
 		position: absolute
@@ -27,13 +23,11 @@
 			width: 400px
 			max-width: 100%
 		+r(991)
-			right: 0
-			left: auto
-			width: 250px
-		+r(767)
 			display: none
 	&__title
 		margin-bottom: 10px
+		+r(1199)
+			margin-bottom: 30px
 		+r(991)
 			margin-bottom: 20px
 		+r(479)
@@ -53,10 +47,10 @@
 		margin-bottom: 108px
 		color: #444444
 		+r(1199)
+			margin-top: 0
 			height: 460px
 		+r(991)
 			height: 380px
-			margin-top: 0
 		+r(767)
 			margin-bottom: 60px
 			font-size: 16px
@@ -108,7 +102,8 @@
 		bottom: 88px
 		outline: none
 		cursor: pointer
-		border: 1px solid transparentize(white, .99999)
+		border: none
+		// border: 2px solid transparentize(white, .99999)
 		display: flex
 		align-items: center
 		justify-content: center
@@ -139,7 +134,7 @@
 			content: ''
 			display: block
 			position: absolute
-			left: 254px
+			left: 270px
 			top: 0
 			+sprite($sign)
 		+r(767)

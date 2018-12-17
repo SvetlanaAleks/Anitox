@@ -97,9 +97,11 @@
 		outline: none
 		cursor: pointer
 		position: relative
-		transition: all .3s
+		transition: all .5s
 		&:hover
-			box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.1)
+			transition: all .5s
+			color: white
+			background: #00b544
 		+r(1199)
 			font-size: 14px
 			padding-right: 15px
@@ -243,6 +245,7 @@
 							color: #58d5e3
 					.bold
 						display: block
+						font-size: 18px
 						color: #000000
 						margin-bottom: 10px
 						+r(479)
@@ -285,8 +288,8 @@
 		color: #444444
 		line-height: 1.13
 		position: relative
-		padding-left: 43px
-		max-width: 200px
+		padding-left: 35px
+		max-width: 225px
 		margin: auto
 		.fico-bus
 			color: #5fb44e
@@ -449,9 +452,9 @@
 			+placeholder
 				font-family: 'Roboto', Arial, Helvetica, sans-serif
 			&:hover
-				box-shadow: inset 0px 2px 7px 0 transparentize(#fca97f, .6)
+				box-shadow: inset 0px 2px 7px 0 lightblue
 			&:focus
-				box-shadow: inset 0px 2px 7px 0 transparentize(#fca97f, .6)
+				box-shadow: inset 0px 2px 7px 0 lightblue
 	.foodnote
 		color: rgba(black, .7)
 		text-align: center

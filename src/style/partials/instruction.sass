@@ -77,6 +77,7 @@
 				display: flex
 				padding-bottom: 20px
 				border-bottom: 1px solid #bcdce4
+				justify-content: space-between
 			+r(767)
 				flex-direction: column
 				padding-bottom: 0
@@ -111,8 +112,20 @@
 				+r(1199)
 					justify-content: space-between
 				+r(991)
-					padding-top: 0
-					padding-bottom: 0
+					padding: 0
+					position: relative
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						border-right: 1px solid #bcdce4
+						right: 14px
+						top: 0
+						bottom: 0
+				+r(767)
+					&::after
+						display: none
+
 			&-2
 				justify-content: flex-start
 				padding-top: 17px
@@ -124,8 +137,7 @@
 				+r(1199)
 					justify-content: space-between
 				+r(991)
-					padding-top: 0
-					padding-bottom: 0
+					padding: 0
 			&-3
 				padding-top: 30px
 				padding-bottom: 0
