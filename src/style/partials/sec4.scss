@@ -28,6 +28,8 @@
   text-align: center;
   margin-bottom: 40px;
   line-height: 1.1;
+  position: relative;
+  z-index: 1;
 }
 
 .sec-4__facilities-list {
@@ -147,6 +149,20 @@
 @media (max-width: 1200px) {
   .sec-4__facilities-list {
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sec-4 {
+    padding-top: 20px;
+  }
+  .sec-4__facilities-title--first::after,
+  .sec-4__facilities-title--second::after {
+    display: none;
+  }
+  .sec-4__facilities-title {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
