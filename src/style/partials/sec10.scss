@@ -7,7 +7,7 @@
 .sec-10::after {
   position: absolute;
   content: "";
-  background: url('../img/line-bottom.png') center top;
+  background: url("../img/line-bottom.png") center top;
   width: 100%;
   height: 97px;
   top: -50px;
@@ -16,7 +16,7 @@
 .sec-10::before {
   position: absolute;
   content: "";
-  background: url('../img/line-top.png') center bottom;
+  background: url("../img/line-top.png") center bottom;
   width: 100%;
   height: 97px;
   bottom: -67px;
@@ -83,6 +83,7 @@
 .sec-10__okay {
   position: absolute;
   left: -1px;
+  top: 0;
   min-width: 60px;
   height: 60px;
   background-color: #5fb44e;
@@ -339,7 +340,6 @@
 }
 
 @media (max-width: 992px) {
-
   .sec-10::after,
   .sec-10::before {
     display: none;
