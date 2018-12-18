@@ -1,6 +1,6 @@
 .sec-10 {
-  padding-top: 98px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -85,7 +85,7 @@
 .sec-10__okay {
   position: absolute;
   left: -1px;
-  top: 0;
+  top: -1px;
   min-width: 60px;
   height: 60px;
   background-color: #5fb44e;
@@ -235,6 +235,14 @@
   }
   .sec-10__image-second {
     max-width: 200px;
+  }
+  .sec-10__title,
+  .sec-10__accent-line{
+    margin: 0 auto 30px;
+  }
+  .sec-10__wrap{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 }
 

@@ -1,7 +1,7 @@
 .sec-4 {
   position: relative;
-  padding-top: 97px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .sec-4::after {
@@ -178,6 +178,9 @@
     padding: 20px;
     margin-bottom: 20px;
   }
+  .sec-4__facilities-block:last-child{
+    margin-bottom: 0px;
+  }
 
   .sec-4__facilities-title {
     margin-top: 0px;
@@ -213,5 +216,8 @@
 
   .sec-4__facilities-block {
     padding: 10px;
+  }
+  .sec-4__facilities-title{
+    font-size: 20px;
   }
 }

@@ -1,7 +1,7 @@
 .sec-2 {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .sec-2::after {
@@ -253,6 +253,16 @@ left: 0;
   .sec-2__accent-block {
     margin-bottom: 25px;
   }
+  .sec-2__reasons-image-block{
+    margin-bottom: 10px;
+  }
+  .sec-2__title{
+    margin-bottom: 10px;
+    padding-bottom: 18px;
+  }
+  .sec-2__reasons-text{
+    line-height: 1.2;
+  }
 
 }
 
@@ -275,6 +285,15 @@ left: 0;
   .sec-2__accent-text {
     padding: 15px 40px;
     line-height: 1.3;
+  }
+.sec-2__symptoms-item-title{
+  line-height: 1.1;
+  }
+  .sec-2__symptoms-image{
+    margin-bottom: 10px;
+  }
+  .sec-2__symptoms-item-title{
+    padding: 0 5px;
   }
 }
 

@@ -8,8 +8,8 @@
 
 .sec-6 {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .sec-6::after {
@@ -47,23 +47,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  top: -35px;
 }
 
 .sec-6__compos-left {
   text-align: right;
   position: relative;
 }
-
-// .sec-6__compos-left::after {
-//   height: 268px;
-//   width: 158px;
-//   position: absolute;
-//   content: "";
-//   top: calc(50% - 130px);
-//   right: -50px;
-//   background-size: contain;
-//   background-image: url(../../img/sec6_t1.png);
-// }
 
 .sec-6__compos-list {
   display: flex;
@@ -197,14 +188,14 @@
 
 .sec-6__pills-right {
   position: relative;
-  right: 22px;
+  right: 18px;
   top: 55px;
 }
 
 .sec-6__pills-left {
   position: relative;
-  left: 45px;
-  top: 55px;
+  left: 56px;
+  top: 56px;
 }
 
 .sec-6__compos-head--left,
@@ -250,6 +241,13 @@
   width: 300px;
 }
 
+.last-plus::after{
+display: none;
+}
+
+.sec-6__compos-info--last{
+  border: 0;
+}
 @media (max-width: 1200px) {
   .sec-6__compos-head {
     width: 100%;
@@ -271,17 +269,33 @@
     width: 135px;
   }
 
+  .sec-6__left-arrow{
+    right: -66px;
+    top: 57px;
+    width: 65px;
+  }
+
+  .sec-6__right-arrow {
+
+    left: -66px;
+    top: 57px;
+    width: 65px;
+    transform: scale(-1,1);
+}
+
   .sec-6__pills-left,
   .sec-6__pills-right {
-    width: 140px;
+    width: 120px;
   }
 
   .sec-6__pills-left {
-    left: 40px;
+    left: 36px;
+    top: -46px;
   }
 
   .sec-6__pills-right {
-    right: 15px;
+    top: -45px;
+    right: 12px;
   }
 
   .sec-10__image-first {
@@ -370,9 +384,27 @@
   .sec-6__compos-head{
     height: auto;
   }
+  .sec-6__compos-text{
+line-height: 1.2;
+  }
+  .sec-6__compos-right .sec-6__compos-info{
+    margin-bottom: 10px;
+  }
+  .active .description{
+    padding-top: 15px;
+  }
+  .sec-6__compos-head{
+    width: 100%;
+    margin-bottom: 25px;
+  }
 
 }
 
+@media (width: 768px){
+  .sec-6__compos-left .sec-6__flex-box{
+    max-width: 80%;
+  }
+}
 @media (max-width: 550px){
   .plus::after {
     width: 215px;
@@ -381,8 +413,9 @@
 
 @media (max-width: 479px) {
   .sec-6__compos-item {
-    padding-top: 20px;
+    padding-top: 0px;
   }
+  
 
   .sec-6__compos-head {
     width: 100%;
@@ -419,8 +452,16 @@
     width: 240px;
   }
   .sec-6__compos-head{
+    margin-bottom: 20px;
+  }
+
+  .sec-6__compos-info{
+    padding: 15px 0;
+  }
+  .sec-6__compos-right .sec-6__compos-info{
     margin-bottom: 0;
   }
+ 
   .sec-6__compos-left .sec-6__flex-box{
     flex-direction: column-reverse;
   }
