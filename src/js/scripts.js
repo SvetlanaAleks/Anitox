@@ -8,8 +8,7 @@ $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 2,
     adaptiveHeight: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
@@ -22,7 +21,11 @@ $(document).ready(function () {
         breakpoint: 541,
         settings: {
           slidesToShow: 1,
+<<<<<<< HEAD
+          adaptiveHeight: false
+=======
           adaptiveHeight: true
+>>>>>>> aeb0042db2c58d9199cc8083640b116570af8e7f
         }
       }
     ]
@@ -67,4 +70,3 @@ if (innerWidth <= "769") {
     elem.innerHTML = " ";
   });
 }
-
