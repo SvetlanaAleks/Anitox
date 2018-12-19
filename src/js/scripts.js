@@ -9,25 +9,21 @@ $(document).ready(function () {
     slidesToScroll: 2,
     adaptiveHeight: true,
     responsive: [{
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 541,
-        settings: {
-          slidesToShow: 1,
-<<<<<<< HEAD
-          adaptiveHeight: false
-=======
-          adaptiveHeight: true
->>>>>>> aeb0042db2c58d9199cc8083640b116570af8e7f
-        }
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
       }
+    },
+    {
+      breakpoint: 541,
+      settings: {
+        slidesToShow: 1,
+        adaptiveHeight: true
+      }
+    }
     ]
   });
 
@@ -66,6 +62,14 @@ if (innerWidth <= "992") {
 }
 if (innerWidth <= "769") {
   let brBlock = document.querySelectorAll(".hide-769");
+  brBlock.forEach(function (elem) {
+    elem.innerHTML = " ";
+  });
+}
+
+
+if (innerWidth <= "769") {
+  let brBlock = document.querySelectorAll(".hide-br-title");
   brBlock.forEach(function (elem) {
     elem.innerHTML = " ";
   });
