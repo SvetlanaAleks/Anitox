@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
   $(".js_sec-8_slider").slick({
     infinite: true,
     dots: true,
@@ -8,7 +8,8 @@ $(document).ready(function () {
     slidesToShow: 2,
     slidesToScroll: 2,
     adaptiveHeight: true,
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
@@ -21,17 +22,13 @@ $(document).ready(function () {
         breakpoint: 541,
         settings: {
           slidesToShow: 1,
-<<<<<<< HEAD
           adaptiveHeight: false
-=======
-          adaptiveHeight: true
->>>>>>> aeb0042db2c58d9199cc8083640b116570af8e7f
         }
       }
     ]
   });
 
-  $(".sec-8-composition-btn").click(function () {
+  $(".sec-8-composition-btn").click(function() {
     $(this)
       .parent()
       .toggleClass("active");
@@ -44,8 +41,8 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".plus").click(function () {
+$(document).ready(function() {
+  $(".plus").click(function() {
     $(this)
       .parent()
       .toggleClass("active");
@@ -60,13 +57,13 @@ $(document).ready(function () {
 
 if (innerWidth <= "992") {
   let brBlock = document.querySelectorAll(".hide-br");
-  brBlock.forEach(function (elem) {
+  brBlock.forEach(function(elem) {
     elem.innerHTML = " ";
   });
 }
 if (innerWidth <= "769") {
   let brBlock = document.querySelectorAll(".hide-769");
-  brBlock.forEach(function (elem) {
+  brBlock.forEach(function(elem) {
     elem.innerHTML = " ";
   });
 }
