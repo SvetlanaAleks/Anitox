@@ -1,6 +1,6 @@
 .sec-2 {
   position: relative;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -11,6 +11,10 @@
   width: 100%;
   height: 97px;
   top: -66px;
+}
+
+.hide-769{
+  display: inline;
 }
 
 .sec-2::before {
@@ -298,7 +302,8 @@ left: 0;
 }
 
 @media (max-width: 769px){
-  .hide-769{
+  .hide-769,
+  .hide-br-title{
     display: inline;
       }
       
