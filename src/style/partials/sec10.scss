@@ -493,3 +493,41 @@
     padding: 15px 10px;
   }
 }
+
+
+
+@keyframes svg-animate {
+
+  0%,
+  40% {
+    fill: rgb(228, 228, 228);
+  }
+
+  20% {
+    fill: rgb(255, 198, 1);
+  }
+}
+
+.svg-one {
+  animation: svg-animate 5s linear infinite;
+}
+
+.svg-two {
+  animation: svg-animate 5s linear infinite;
+  animation-delay: 1s;
+}
+
+.svg-three {
+  animation: svg-animate 5s linear infinite;
+  animation-delay: 2s;
+}
+
+.svg-four {
+  animation: svg-animate 5s linear infinite;
+  animation-delay: 3s;
+}
+
+.svg-five {
+  animation: svg-animate 5s linear infinite;
+  animation-delay: 4s;
+}

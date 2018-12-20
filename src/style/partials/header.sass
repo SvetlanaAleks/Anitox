@@ -489,12 +489,13 @@
 	font-weight: 700
 	margin-bottom: 10px
 	font-size: 30px
-	height: 65px
+	height: 68px
 	padding: 8px 0
 	width: 220px
-	background: linear-gradient(to right, #fca87f, #fad077 50%, #fcaa7f)
+	background-image: linear-gradient(to right, #fca87f, #fad077 50%, #fcaa7f)
 	border-bottom: 5px solid #fca97f
-	box-shadow: 0 12px 23px -10px #fca97f
+	// box-shadow: 0 12px 23px -10px #fca97f
+	box-shadow: 0 12px 23px -10px rgba(252, 169, 127, 0.52);
 	border-radius: 32px
 	transition: .5s
 	line-height: 1
@@ -502,6 +503,15 @@
 	z-index: 1
 	&:hover
 		box-shadow: 2px 9px 30px 0px rgba(252, 169, 127, 065)
+	&:after
+		content: ''
+		width: 70%
+		height: 2px
+		background: linear-gradient(to left, #fca97f, #feebc2 50%, #fcaa7f)
+		position: absolute
+		bottom: 0px
+		left: 50%
+		transform: translateX(-50%)
 	.small
 		display: block
 		font-size: 17px
