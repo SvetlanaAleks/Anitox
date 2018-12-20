@@ -13,7 +13,7 @@
   top: -66px;
 }
 
-.hide-769{
+.hide-769 {
   display: inline;
 }
 
@@ -206,20 +206,21 @@
   position: relative;
 }
 
-.sec-2__logo-block{
+.sec-2__logo-block {
   position: relative;
 }
-.sec-2__logo-block::after{
+
+.sec-2__logo-block::after {
   content: "";
-position: absolute;
-height: 1px;
-width: 400px;
-background-color: #e0e1e1;
-top: 45px;
-left: 0;
+  position: absolute;
+  height: 1px;
+  width: 400px;
+  background-color: #e0e1e1;
+  top: 45px;
+  left: 0;
 }
 
-.sec-2__logo-block::before{
+.sec-2__logo-block::before {
   content: "";
   position: absolute;
   height: 1px;
@@ -227,7 +228,13 @@ left: 0;
   background-color: #e0e1e1;
   top: 45px;
   right: 0;
+}
+
+@media (max-width: 1199px) {
+  .sec-2 {
+    padding-top: 0;
   }
+}
 
 @media (max-width: 1200px) {
   .sec-2__reasons-item {
@@ -240,37 +247,50 @@ left: 0;
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 1024px) {
   .sec-2 {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
   .sec-2__title {
     margin-bottom: 20px;
   }
+
   .sec-2__sub-title {
     font-size: 21px;
   }
+
   .sec-2__symptoms-block {
     margin-bottom: 25px;
   }
+
+  .sec-2__accent-text {
+    font-size: 22px;
+  }
+
   .sec-2__accent-block {
     margin-bottom: 25px;
   }
-  .sec-2__reasons-image-block{
+
+  .sec-2__reasons-image-block {
     margin-bottom: 10px;
   }
-  .sec-2__title{
+
+  .sec-2__title {
     margin-bottom: 10px;
     padding-bottom: 18px;
   }
-  .sec-2__reasons-text{
+
+  .sec-2__reasons-text {
     line-height: 1.2;
   }
 
 }
 
 @media (max-width: 992px) {
+
   .sec-2::after,
   .sec-2::before {
     display: none;
@@ -281,33 +301,67 @@ left: 0;
     margin-bottom: 20px;
   }
 
+  .sec-2__association-title {
+    font-size: 18px;
+  }
+
+  .sec-2__sub-title {
+    font-size: 19px;
+  }
+
   .sec-2__symptoms-list {
     justify-content: center;
     padding: 30px 0 10px;
   }
 
+  .sec-2__accent-block {
+    margin-bottom: 20px;
+  }
+
   .sec-2__accent-text {
-    padding: 15px 40px;
+    padding: 15px 30px;
+    font-size: 18px;
     line-height: 1.3;
   }
-.sec-2__symptoms-item-title{
-  line-height: 1.1;
+
+  .sec-2__reasons-text {
+    font-size: 17px;
   }
-  .sec-2__symptoms-image{
+
+  .sec-2__reasons-list {
+    margin-bottom: 20px;
+  }
+
+  .sec-2__bottom-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .sec-2__bottom-text {
+    font-size: 18px;
+  }
+
+  .sec-2__symptoms-item-title {
+    line-height: 1.1;
+  }
+
+  .sec-2__symptoms-image {
     margin-bottom: 10px;
   }
-  .sec-2__symptoms-item-title{
+
+  .sec-2__symptoms-item-title {
     padding: 0 5px;
   }
 }
 
-@media (max-width: 769px){
+@media (max-width: 769px) {
+
   .hide-769,
-  .hide-br-title{
-    display: inline;
-      }
-      
+  .hide-br-title {
+    display: block;
+  }
 }
+
 @media (max-width: 759px) {
   .sec-2__reasons-item {
     width: 50%;
@@ -318,9 +372,11 @@ left: 0;
     justify-content: center;
     margin-bottom: 0;
   }
+
   .sec-2__accent-text {
     font-size: 20px;
   }
+
   .sec-2__bottom-text {
     font-size: 18px;
   }
@@ -335,30 +391,70 @@ left: 0;
     width: 100%;
   }
 }
+
 @media (max-width: 479px) {
+  .sec-2__association-block {
+    margin-bottom: 10px;
+  }
+
+  .sec-2__title {
+    font-size: 25px !important;
+  }
+
   .sec-2__symptoms-item {
     width: 100%;
   }
+
+  .last {
+    margin-bottom: 0;
+  }
+
   .sec-2__symptoms-item-title {
     padding: 0 10px;
   }
+
   .sec-2__association-title {
+    font-size: 15px;
+  }
+
+  .sec-2__sub-title {
     font-size: 18px;
   }
-  .sec-2__sub-title {
+
+  .sec-2__symptoms-title {
     font-size: 20px;
+    margin-bottom: 15px;
   }
-  .sec-2__accent-text{
-    padding: 15px 10px;
+
+  .sec-2__symptoms-list {
+    padding-top: 15px;
   }
-  .sec-2__logo-block::after{
-   display: none;
+
+  .sec-2__accent-block {
+    margin-bottom: 10px;
   }
-  
-  .sec-2__logo-block::before{
+
+  .sec-2__bottom-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .sec-2__accent-text {
+    padding: 9px;
+    font-size: 16px;
+  }
+
+  .sec-2__logo-block::after {
     display: none;
-    }
-  
+  }
+
+  .sec-2__logo-block::before {
+    display: none;
+  }
+
+  .sec-2__bottom-text {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 420px) {

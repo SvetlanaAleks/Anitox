@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $(".js_sec-8_slider").slick({
     infinite: true,
     dots: true,
@@ -8,9 +8,7 @@ $(document).ready(function() {
     slidesToShow: 2,
     slidesToScroll: 2,
     adaptiveHeight: true,
-<<<<<<< HEAD
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 992,
         settings: {
           slidesToShow: 1,
@@ -23,30 +21,13 @@ $(document).ready(function() {
         breakpoint: 541,
         settings: {
           slidesToShow: 1,
-          adaptiveHeight: false
+          adaptiveHeight: true
         }
-=======
-    responsive: [{
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
->>>>>>> 32aee7084629c2b3f91ca9d8ced2b37f2032d8fe
       }
-    },
-    {
-      breakpoint: 541,
-      settings: {
-        slidesToShow: 1,
-        adaptiveHeight: true
-      }
-    }
     ]
   });
 
-  $(".sec-8-composition-btn").click(function() {
+  $(".sec-8-composition-btn").click(function () {
     $(this)
       .parent()
       .toggleClass("active");
@@ -59,8 +40,8 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function() {
-  $(".plus").click(function() {
+$(document).ready(function () {
+  $(".plus").click(function () {
     $(this)
       .parent()
       .toggleClass("active");
@@ -75,18 +56,16 @@ $(document).ready(function() {
 
 if (innerWidth <= "992") {
   let brBlock = document.querySelectorAll(".hide-br");
-  brBlock.forEach(function(elem) {
+  brBlock.forEach(function (elem) {
     elem.innerHTML = " ";
   });
 }
 if (innerWidth <= "769") {
   let brBlock = document.querySelectorAll(".hide-769");
-  brBlock.forEach(function(elem) {
+  brBlock.forEach(function (elem) {
     elem.innerHTML = " ";
   });
 }
-<<<<<<< HEAD
-=======
 
 
 if (innerWidth <= "769") {
@@ -95,4 +74,3 @@ if (innerWidth <= "769") {
     elem.innerHTML = " ";
   });
 }
->>>>>>> 32aee7084629c2b3f91ca9d8ced2b37f2032d8fe

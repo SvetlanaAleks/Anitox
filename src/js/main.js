@@ -2,6 +2,7 @@
 
 //=require partials/app.js
 
-$(document).ready(function() {
+$(document).ready(function () {
   App.init();
+  new WOW().init();
 });

@@ -2,6 +2,7 @@
   padding-top: 20px;
   padding-bottom: 30px;
   position: relative;
+
 }
 
 .sec-8::after {
@@ -148,22 +149,16 @@
   width: 100%;
   height: 80px;
   background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    180deg,
+  background: -moz-linear-gradient(180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgb(255, 255, 255) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
+    rgb(255, 255, 255) 100%);
+  background: -webkit-linear-gradient(180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgb(255, 255, 255) 100%
-  );
-  background: linear-gradient(
-    180deg,
+    rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgb(255, 255, 255) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    rgb(255, 255, 255) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
   left: 0;
   bottom: 0;
   opacity: 1;
@@ -176,6 +171,7 @@
   height: 100%;
   max-height: 900px;
 }
+
 .active .sec-8__overflow:after {
   opacity: 0;
 }
@@ -208,9 +204,11 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .slick-prev {
   left: -35px;
 }
+
 .slick-next {
   right: -35px;
 }
@@ -225,7 +223,7 @@
   content: "";
 }
 
-.sec-2__symptoms-item-title br{
+.sec-2__symptoms-item-title br {
   display: none;
 }
 
@@ -233,20 +231,36 @@
   .sec-8__slide-wrap {
     flex-direction: column;
   }
+
   .sec-8__slide-user {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
   .sec-8__slide-image {
     margin: 0 auto 20px;
   }
+
+  .sec-8__slide-wrap {
+    padding: 20px;
+  }
+
   .sec-8__video,
   .sec-8__video-box iframe {
     width: 260px;
     height: 210px;
   }
+
   .youtube .thumb {
     height: 100%;
+  }
+
+  .sec-8__title {
+    margin-bottom: 25px;
+  }
+
+  .sec-8__videos {
+    margin-bottom: 25px;
   }
 }
 
@@ -255,44 +269,61 @@
     padding-top: 20px;
     padding-bottom: 30px;
   }
+
+  .sec-8__title {
+    margin-bottom: 30px;
+  }
+
   .sec-8__video,
   .sec-8__video-box iframe {
     height: 210px;
   }
+
   .sec-8__videos {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
+
   .slick-list {
     padding-bottom: 20px;
   }
 }
 
 @media (max-width: 992px) {
+
   .sec-8::after,
   .sec-8::before {
     display: none;
   }
+
+  .sec-8__title br {
+    display: none;
+  }
+
   .sec-8__slide-wrap {
     flex-direction: row;
   }
+
   .sec-8__slide-user {
     margin-right: 20px;
     margin-bottom: 0px;
   }
+
   .sec-8__videos {
     justify-content: center;
     margin-bottom: 20px;
   }
+
   .sec-8__video-box {
     margin: 10px;
   }
+
   .sec-8__video,
   .sec-8__video-box iframe {
     width: 290px;
   }
 
-  .sec-8__title{
-margin-bottom: 30px;
+  .sec-8__title {
+    margin-bottom: 30px;
   }
 }
 
@@ -300,30 +331,45 @@ margin-bottom: 30px;
   .sec-8__video-box {
     margin: 0 0 20px;
   }
+
   .youtube .thumb {
     height: auto;
   }
+
   .sec-8__video,
   .sec-8__video-box iframe {
     width: 400px;
   }
-  .sec-8__video-box{
+
+  .sec-8__video-box {
     padding: 10px;
   }
+
   .sec-8__slide-wrap {
     flex-direction: column;
   }
+
   .sec-8__slide-user {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
+
   .sec-8__slide-image {
     margin: 0 auto 20px;
   }
-  .hide-769{
-    display: inline;
+
+  .sec-8__slide-wrap {
+    padding: 15px;
   }
-  
+
+  .hide-769 {
+    display: none;
+  }
+
+  .sec-8__slide-review {
+    font-size: 15px;
+  }
+
 }
 
 @media (max-width: 580px) {
@@ -333,47 +379,59 @@ margin-bottom: 30px;
 }
 
 @media (max-width: 540px) {
- 
+
   .sec-8-composition-btn {
     display: flex;
   }
+
   .sec-8__overflow:after {
     display: block;
   }
+
   .sec-8__overflow {
     max-height: 200px;
   }
+
   .slick-list {
     padding-bottom: 50px;
     height: 100% !important;
   }
+
   .slick-dots li button:before {
     width: 15px;
     height: 15px;
   }
 }
+
 @media (max-width: 479px) {
+
   .sec-8__video,
   .sec-8__video-box iframe {
     width: 270px;
     height: 200px;
   }
+
   .youtube .thumb {
     height: 100%;
   }
+
   .sec-8__slide-wrap {
     padding: 15px;
   }
+
   .sec-8__slider-box {
     width: 100%;
   }
-  .slick-arrows-block{
+
+  .slick-arrows-block {
     display: none;
   }
-  .sec-2__symptoms-image{
+
+  .sec-2__symptoms-image {
     margin-bottom: 5px;
   }
-  .sec-2__symptoms-item-title{
+
+  .sec-2__symptoms-item-title {
     font-size: 16px;
   }
 }
@@ -382,12 +440,12 @@ margin-bottom: 30px;
   .slick-prev {
     left: -25px;
   }
+
   .slick-next {
     right: -25px;
   }
+
   .sec-8__slider-box {
     width: 100%;
   }
 }
-
-

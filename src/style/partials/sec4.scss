@@ -29,7 +29,7 @@
   margin-bottom: 40px;
   line-height: 1.1;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 
 .sec-4__facilities-list {
@@ -119,10 +119,12 @@
 .sec-4__facilities-text {
   font-size: 18px;
   line-height: 1.4;
+  color: #444444;
 }
 
 .weight-medium {
   font-weight: 500;
+  color: #010101;
 }
 
 .sec-4__important {
@@ -156,13 +158,19 @@
   .sec-4 {
     padding-top: 20px;
   }
+
   .sec-4__facilities-title--first::after,
   .sec-4__facilities-title--second::after {
     display: none;
   }
+
   .sec-4__facilities-title {
     margin-top: 0;
     padding-top: 0;
+  }
+
+  .sec-4__bottom-text {
+    font-size: 21px;
   }
 }
 
@@ -173,12 +181,31 @@
     display: none;
   }
 
+  .sec-4__title {
+    margin-bottom: 25px;
+  }
+
+  .sec-4__bottom-text {
+    font-size: 20px;
+  }
+
+  .sec-4__facilities-item {
+    padding: 10px 15px;
+  }
+
+
+
+  .sec-4__facilities-text {
+    font-size: 18px;
+  }
+
   .sec-4__facilities-block {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
   }
-  .sec-4__facilities-block:last-child{
+
+  .sec-4__facilities-block:last-child {
     margin-bottom: 0px;
   }
 
@@ -189,11 +216,25 @@
   .sec-4__facilities-list {
     margin-bottom: 20px;
   }
+
 }
 
 @media (max-width: 769px) {
   .sec-4__bottom-text {
     font-size: 20px;
+  }
+
+  .sec-4__facilities-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .sec-4__bottom-text {
+    font-size: 18px;
+  }
+
+  .sec-4__facilities-text {
+    font-size: 16px;
   }
 }
 
@@ -211,13 +252,26 @@
 
 @media (max-width: 479px) {
   .sec-4__bottom-text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .sec-4__facilities-block {
     padding: 10px;
   }
-  .sec-4__facilities-title{
+
+  .sec-4__facilities-title {
     font-size: 20px;
   }
+
+  .sec-4__title .nowrap {
+    white-space: normal;
+  }
+
+  .sec-4__title br {
+    display: block;
+  }
+}
+
+.sec-4__title br {
+  display: none;
 }
