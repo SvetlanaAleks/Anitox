@@ -3,8 +3,8 @@
 	background: url('../img/header__back.jpg') no-repeat center top
 	padding-bottom: 100px
 	background-size: cover
-	+r(991)
-		padding-bottom: 190px
+	+r(1199)
+		padding-bottom: 60px
 	&--bottom
 		padding-top: 109px
 		.product
@@ -18,7 +18,7 @@
 		+r(991)
 			flex-direction: column
 			align-items: center
-		+r(767)
+		+r(991)
 			margin-bottom: 20px
 		+r(479)
 			margin-bottom: 15px
@@ -48,6 +48,7 @@
 			flex-shrink: 0
 			+r(1199)
 				font-size: 14px
+
 			+r(479)
 				text-align: center
 	.nav
@@ -125,37 +126,38 @@
 		margin-bottom: 21px
 		+r(1199)
 			margin-bottom: 15px
-		+r(767)
+		+r(991)
 			text-align: center
+			margin-bottom: 10px
 	&__main
 		display: flex
 		justify-content: flex-end
 		position: relative
 		+r(991)
 			justify-content: space-between
-		+r(767)
 			flex-direction: column
 		.img
 			position: absolute
 			bottom: -83px
 			left: -318px
 			pointer-events: none
-			+r(1620)
-				display: none
-		.img-media
-			position: absolute
-			bottom: 0
-			left: 0
-			display: none
-			pointer-events: none
-			+r(1620)
-				display: block
+			+r(1440)
+				bottom: 17px
+				left: -181px
+				width: 860px
+			+r(1250)
+				bottom: 67px
+				left: -111px
+				width: 760px
 			+r(1199)
-				width: 340px
-				max-width: 100%
-				left: -48px
-				bottom: 170px
+				bottom: 217px
+				left: -121px
+				width: 500px
 			+r(991)
+				bottom: 177px
+				left: -71px
+				width: 600px
+			+r(767)
 				display: none
 		.info
 			width: 410px
@@ -164,35 +166,34 @@
 			position: relative
 			+r(1199)
 				margin-right: 0px
+			+r(991)
+				width: 100%
+				margin-bottom: 20px
 			+r(767)
 				text-align: center
-				width: 100%
 				margin-bottom: 20px
 			.product
 				position: absolute
 				left: -493px
 				bottom: -159px
 				z-index: 1
-				+r(1620)
-					left: -453px
+				+r(1250)
+					bottom: -59px
+					width: 420px
+					left: -432px
 				+r(1199)
-					bottom: -39px
-					left: -273px
-					width: 330px
+					bottom: 21px
+					left: -283px
+					width: 310px
 				+r(991)
-					left: 50%
-					bottom: -172px
+					left: 0
+					bottom: -520px
+					width: 400px
 				+r(767)
 					position: static
-					left: 0
+					width: 300px
 				+r(479)
 					width: 280px
-			.logo
-				font-size: 38px
-				font-weight: 900
-				margin-bottom: 9px
-				+r(767)
-					display: none
 			.text
 				font-size: 20px
 				line-height: 1.2
@@ -201,6 +202,11 @@
 				+r(1199)
 					margin-bottom: 17px
 					font-size: 19px
+				+r(991)
+					font-size: 18px
+					text-align: center
+					br
+						display: none
 				+r(767)
 					font-size: 17px
 				.bold
@@ -208,10 +214,14 @@
 			.list
 				margin-bottom: 19px
 				counter-reset: section
+				+r(991)
+					display: flex
 				+r(767)
+					display: block
 					width: 73%
 					margin: auto
 					text-align: left
+					margin-bottom: 20px
 				+r(479)
 					width: 100%
 				&__item
@@ -221,9 +231,18 @@
 					position: relative
 					padding-left: 70px
 					display: block
-					+r(767)
+					+r(991)
+						width: 50%
+						font-size: 16px
+						padding-left: 57px
 						br
 							display: none
+						+nlt
+							margin-right: 10px
+					+r(767)
+						width: 100%
+						+nlt
+							margin-bottom: 25px
 					+r(479)
 						padding-left: 60px
 						font-size: 15px
@@ -240,6 +259,8 @@
 						font-weight: 900
 					+nlt
 						margin-bottom: 25px
+						+r(991)
+							margin-bottom: 0
 						+r(479)
 							margin-bottom: 15px
 					&:last-of-type
@@ -247,11 +268,15 @@
 						position: relative
 						&::before
 							color: #58d5e3
+						+r(991)
+							padding-bottom: 0
 					.bold
 						display: block
 						font-size: 18px
 						color: #000000
 						margin-bottom: 10px
+						+r(991)
+							font-size: 17px
 						+r(479)
 							line-height: 1
 							margin-bottom: 5px
@@ -265,12 +290,15 @@
 				color: #444444
 				position: relative
 				padding-left: 71px
-				+r(767)
-					margin-bottom: 20px
-					text-align: left
-				+r(479)
-					padding-left: 0
-					text-align: center
+				padding-top: 21px
+				+r(991)
+					display: none
+				// +r(767)
+				// 	margin-bottom: 20px
+				// 	text-align: left
+				// +r(479)
+				// 	padding-left: 0
+				// 	text-align: center
 					&::after
 						top: -15px
 						left: 50%
@@ -281,10 +309,12 @@
 					position: absolute
 					height: 2px
 					background-color: #06a9cf
-					top: -21px
+					top: 0
 					width: 125px
 					
 .order-form
+	+r(991)
+		margin-left: auto
 	+r(767)
 		margin: auto
 	.text

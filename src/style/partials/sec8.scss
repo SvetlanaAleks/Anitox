@@ -227,6 +227,11 @@
   display: none;
 }
 
+.vid-3 {
+  border-radius: 5px;
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .sec-8__slide-wrap {
     flex-direction: column;
@@ -328,6 +333,10 @@
 }
 
 @media (max-width: 769px) {
+  .vid-3 {
+    height: auto;
+  }
+
   .sec-8__video-box {
     margin: 0 0 20px;
   }

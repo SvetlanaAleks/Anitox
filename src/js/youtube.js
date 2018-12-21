@@ -10,13 +10,13 @@
     // c.setAttribute("class", "play");
     // y.appendChild(i);
     // y.appendChild(c);
-    y.onclick = function() {
+    y.onclick = function () {
       var a = document.createElement("iframe");
       a.setAttribute(
         "src",
         "https://www.youtube.com/embed/" +
-          this.id +
-          "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1"
+        this.id +
+        "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1"
       );
       a.style.width = this.style.width;
       a.style.height = this.style.height;
